@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import logo from '../../assets/SHOPski.svg'
 
 const NavbarContainer = styled.nav`
 	display: flex;
