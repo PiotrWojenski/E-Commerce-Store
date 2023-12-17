@@ -1,9 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import logo from '../assets/logoipsum-288.svg'
+
+const Container = styled.div`
+	height: 100px;
+`
+const Topbar = styled.div`
+	width: 100vw;
+	background-color: #f8d7da;
+	padding: 5px;
+	text-align: center;
+	color: #721c24;
+`
 
 const NavbarContainer = styled.nav`
+	height: 60px;
+	width: 100vw;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -11,28 +23,28 @@ const NavbarContainer = styled.nav`
 	background-color: #333;
 `
 
-const LogoContainer = styled.div`
-	display: flex;
+const Logo = styled.div`
+	font-size: 24px;
+	font-weight: bold;
+	color: white;
+	flex: 1;
 	justify-content: flex-start;
-	align-items: center;
-`
-
-const LogoImage = styled.img`
-	width: 120px;
-	height: auto;
-	padding-left: 10px;
+	margin-left: 20px;
 `
 
 const NavList = styled.ul`
 	list-style: none;
-	margin: 0;
-	padding: 0;
+	margin: 10px;
+	padding: 10px;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: end;
+	flex: 1;
+	align-items: center;
 `
 
 const NavListItem = styled.li`
 	margin-right: 20px;
+	align-items: center;
 `
 
 const NavLink = styled(Link)`
@@ -42,11 +54,10 @@ const NavLink = styled(Link)`
 
 function MyNavbar() {
 	return (
-		<>
+		<Container>
+			<Topbar>🎉 Special Discount: Use code SPECIAL20 for 20% off! 🎉</Topbar>
 			<NavbarContainer>
-				<LogoContainer>
-					<LogoImage src={logo} alt="Logo" />
-				</LogoContainer>
+				<Logo> SHOPski</Logo>
 				<NavList>
 					<NavListItem>
 						<NavLink to="/">Home</NavLink>
@@ -59,7 +70,7 @@ function MyNavbar() {
 					</NavListItem>
 				</NavList>
 			</NavbarContainer>
-		</>
+		</Container>
 	)
 }
 
