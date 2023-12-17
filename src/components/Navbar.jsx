@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import logo from '../assets/logoipsum-288.svg'
 
 const NavbarContainer = styled.nav`
 	display: flex;
@@ -17,8 +18,9 @@ const LogoContainer = styled.div`
 `
 
 const LogoImage = styled.img`
-	width: 50px;
+	width: 120px;
 	height: auto;
+	padding-left: 10px;
 `
 
 const NavList = styled.ul`
@@ -40,22 +42,24 @@ const NavLink = styled(Link)`
 
 function MyNavbar() {
 	return (
-		<NavbarContainer>
-			<LogoContainer>
-				<LogoImage src={logo} alt="Logo" />
-			</LogoContainer>
-			<NavList>
-				<NavListItem>
-					<NavLink to="/">Home</NavLink>
-				</NavListItem>
-				<NavListItem>
-					<NavLink to="/products">Products</NavLink>
-				</NavListItem>
-				<NavListItem>
-					<NavLink to="/cart">Cart</NavLink>
-				</NavListItem>
-			</NavList>
-		</NavbarContainer>
+		<>
+			<NavbarContainer>
+				<LogoContainer>
+					<LogoImage src={logo} alt="Logo" />
+				</LogoContainer>
+				<NavList>
+					<NavListItem>
+						<NavLink to="/">Home</NavLink>
+					</NavListItem>
+					<NavListItem>
+						<NavLink to="/products">Products</NavLink>
+					</NavListItem>
+					<NavListItem>
+						<NavLink to="/cart">Cart</NavLink>
+					</NavListItem>
+				</NavList>
+			</NavbarContainer>
+		</>
 	)
 }
 
