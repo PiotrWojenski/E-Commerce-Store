@@ -54,6 +54,10 @@ const NavLink = styled(Link)`
 	color: white;
 `
 
+const PersonIcon = styled(PersonIcon)`
+	color: white;
+`
+
 function MyNavbar() {
 	return (
 		<Container>
