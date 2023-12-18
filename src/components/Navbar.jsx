@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import PersonIcon from '@mui/icons-material/Person'
+import IconButton from '@mui/material/IconButton'
 
 const Container = styled.div`
 	height: 100px;
@@ -67,6 +69,11 @@ function MyNavbar() {
 					</NavListItem>
 					<NavListItem>
 						<NavLink to="/cart">Cart</NavLink>
+					</NavListItem>
+					<NavListItem>
+						<IconButton>
+							<PersonIcon to="/login" />
+						</IconButton>
 					</NavListItem>
 				</NavList>
 			</NavbarContainer>
