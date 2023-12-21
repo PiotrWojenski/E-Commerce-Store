@@ -63,7 +63,7 @@ function MyNavbar() {
 		<Container>
 			<Topbar>🎉 Special Discount: Use code SPECIAL20 for 20% off! 🎉</Topbar>
 			<NavbarContainer>
-				<Logo> SHOPski</Logo>
+				<Logo to="/"> SHOPski</Logo>
 				<NavList>
 					<NavListItem>
 						<NavLink to="/">Home</NavLink>
