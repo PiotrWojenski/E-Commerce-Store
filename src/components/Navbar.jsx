@@ -61,7 +61,7 @@ const PersonIcon = styled(PersonIcon)`
 function MyNavbar() {
 	return (
 		<Container>
-			<Topbar>🎉 Special Discount: Use code SPECIAL20 for 20% off! 🎉</Topbar>
+			<Topbar>🎉Special Discount: Use code SPECIAL20 for 20% off! 🎉</Topbar>
 			<NavbarContainer>
 				<Logo to="/"> SHOPski</Logo>
 				<NavList>
