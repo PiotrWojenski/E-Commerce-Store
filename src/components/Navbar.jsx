@@ -54,7 +54,7 @@ const NavLink = styled(Link)`
 	color: white;
 `
 
-const PersonIcon = styled(PersonIcon)`
+const PersonIcons = styled(PersonIcon)`
 	color: white;
 `
 
@@ -76,7 +76,7 @@ function MyNavbar() {
 					</NavListItem>
 					<NavListItem>
 						<IconButton>
-							<PersonIcon to="/login" />
+							<PersonIcons to="/login" />
 						</IconButton>
 					</NavListItem>
 				</NavList>
